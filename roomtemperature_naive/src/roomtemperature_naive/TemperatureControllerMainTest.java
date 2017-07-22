@@ -1,6 +1,6 @@
 package roomtemperature_naive;
 
-public class TestTemperatureControllerMain {
+public class TemperatureControllerMainTest {
 
 	public static void main(String[] args) throws InterruptedException {
 
