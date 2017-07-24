@@ -34,22 +34,25 @@ public class TestTemperatureController {
 		outContent.reset();
 		tc.tempeChangeUpdate(Signal.SIGNAL_TOO_HOT);
 		String str = outContent.toString();
-		String message = "Signal received: SIGNAL_TOO_HOT\r\n";
-		int compRes = message.compareTo(str.toString());
+		String[] splitStr = str.split("\r\n");
+		String message = "Signal received: SIGNAL_TOO_HOT";
+		int compRes = message.compareTo(splitStr[0]);
 		Assert.assertTrue(compRes == 0);
 		
 		outContent.reset();
 		tc.tempeChangeUpdate(Signal.SIGNAL_TOO_COLD);
 		str = outContent.toString();
-		message = "Signal received: SIGNAL_TOO_COLD\r\n";
-		compRes = message.compareTo(str.toString());
+		String[] splitStr1 = str.split("\r\n");
+		message = "Signal received: SIGNAL_TOO_COLD";
+		compRes = message.compareTo(splitStr1[0]);
 		Assert.assertTrue(compRes == 0);
 		
 		outContent.reset();
 		tc.tempeChangeUpdate(Signal.SIGNAL_IDEAL_TEMPERATURE);
 		str = outContent.toString();
-		message = "Signal received: SIGNAL_IDEAL_TEMPERATURE\r\n";
-		compRes = message.compareTo(str.toString());
+		String[] splitStr2 = str.split("\r\n");
+		message = "Signal received: SIGNAL_IDEAL_TEMPERATURE";
+		compRes = message.compareTo(splitStr2[0]);
 		Assert.assertTrue(compRes == 0);
 	}
 

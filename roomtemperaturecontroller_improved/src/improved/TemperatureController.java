@@ -7,7 +7,7 @@ import java.util.TimerTask;
 
 public class TemperatureController implements ITemperatureChangeObserver{
 	
-	private  StateMachine m_fsm;
+	private  SimpleFSM m_fsm;
 	
 	private long delay =10*1000;
 	private FanOnTimer fanOnTimerTask;

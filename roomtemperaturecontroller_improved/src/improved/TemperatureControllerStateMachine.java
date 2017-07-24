@@ -3,7 +3,7 @@ package improved;
 import java.util.HashSet;
 import java.util.Set;
 
-public class TemperatureControllerStateMachine extends StateMachine {
+public class TemperatureControllerStateMachine extends SimpleFSM {
 	private static TemperatureControllerStateMachine instance;
 	
 	private HeaterEnabledState mHeaterEnabledState;

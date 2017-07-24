@@ -11,9 +11,9 @@ import java.util.HashSet;
 import org.junit.Before;
 import org.junit.Test;
 
-public class TestStateMachine {
+public class TestSimpleFSM {
 
-	private StateMachine m_fsm;
+	private SimpleFSM m_fsm;
 	private HeaterEnabledState mHeaterEnabledState;
 	private FanOnState mFanOnState;
 	private AcEnabledState mACEnabledState;
@@ -83,7 +83,7 @@ public class TestStateMachine {
 		states.add(mFanOnState);
 		states.add(mFanOffState);
 		
-		m_fsm = new StateMachine(states, mOffState);
+		m_fsm = new SimpleFSM(states, mOffState);
     }
     
 
