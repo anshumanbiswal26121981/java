@@ -1,7 +1,7 @@
 /**
  * @author abiswal
  */
-package com.biswal.anshuman.practise;
+package com.biswal.anshuman.practise.recursion;
 
 import static org.junit.jupiter.api.Assertions.*;
 

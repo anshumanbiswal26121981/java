@@ -1,7 +1,7 @@
 /**
  * @author abiswal
  */
-package com.biswal.anshuman.practise;
+package com.biswal.anshuman.practise.recursion;
 
 /**
  *  This is a sample class to check the recursive call flow

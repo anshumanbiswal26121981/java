@@ -3,7 +3,7 @@
  *
  */
 
-package com.biswal.anshuman.practise;
+package com.biswal.anshuman.practise.recursion;
 
 /**
  * This class is used to find the factorial of a number using recursion
